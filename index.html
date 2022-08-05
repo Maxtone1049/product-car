@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+<header>
+  <a href="#" class="logo">Shoe<span>Brand</span></a>
+  <nav>
+    <p class="close">&times; </p>
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sneakers</a></li>
+      <li><a href="#">Players   </a></li>
+        </ul>
+       
+    </nav>
+    <p class="menu">&#9776;</p>
+</header>
+<section class="hero">
+    <h1>Regain your confidence on the Road</h1>
+<p class="subhead">A shoe built with purpose to take you to next level. </p>
+<p class="down-arrow">&#8595;</p>
+</section>
+
+<section class="more-info">
+    <div class="feature">
+         <div class="content">
+             <p class="title">Lightweight</p>
+             <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+         </div>
+         <img src="images/sprin.jpg" alt="anoter car">
+    </div>
+
+    <div class="feature left">
+        <div class="content">
+            <p class="title">Lightweight</p>
+            <p class="desc">Mercedes Benz Sprinter Van Price: 12mil.</p>
+        </div>
+        <img src="images/fview.jpg" alt="anoter car">
+   </div>
+
+   <div class="feature">
+    <div class="content">
+        <p class="title">Lightweight</p>
+        <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+    </div>
+    <img src="images/tre.jpeg" alt="anoter car">
+</div>
+</section>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener ('click', ()  => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener ('click', ()  => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
